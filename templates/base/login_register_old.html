@@ -5,13 +5,13 @@
     <div>
         <form method="post">
             {% csrf_token %}
-            <label for="">Username</label>
-            <input type="text" name = "username" placeholder="Enter Username">
+            <label for="">Email</label>
+            <input type="email" name = "email" placeholder="Enter Username">
             <label for="">Password</label>
             <input type="password" name = "password" placeholder="Enter password">
             <input type="submit" value="Log In">
         </form>
-    <p>havent signed up yet?</p>
+    <p>haven't signed up yet?</p>
         <a href="{% url 'register' %}">Sign up</a>
     </div>
     {% else %}
